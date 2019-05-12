@@ -46,7 +46,7 @@ def checkout(cart, coupons)
     attributes
   end.sum
 
-  if total > 100 
+  if total > 100
     total = total * .9
   end
 

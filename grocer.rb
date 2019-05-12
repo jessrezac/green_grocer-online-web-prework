@@ -44,4 +44,5 @@ def checkout(cart, coupons)
   clearanced_cart.sum do |product, attributes|
     attributes[:price] * attributes[:count]
   end
+  binding.pry
 end

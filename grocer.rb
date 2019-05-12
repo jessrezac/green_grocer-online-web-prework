@@ -45,4 +45,6 @@ def checkout(cart, coupons)
     attributes[:price] * attributes[:count]
     binding.pry
   end
+
+  total
 end

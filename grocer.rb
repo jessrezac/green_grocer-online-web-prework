@@ -42,5 +42,5 @@ def checkout(cart, coupons)
   clearanced_cart = apply_clearance(couponed_cart)
   clearanced_cart.each do |product, attributes|
     binding.pry
-
+  end
 end

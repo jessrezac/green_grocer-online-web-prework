@@ -43,8 +43,8 @@ def checkout(cart, coupons)
 
   clearanced_cart.each_with_object({}) do |(product, attributes), total|
     attributes[:price] * attributes[:count]
-    binding.pry
   end
+  binding.pry
 
   total
 end

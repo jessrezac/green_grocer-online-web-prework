@@ -41,7 +41,7 @@ def checkout(cart, coupons)
   couponed_cart = apply_coupons(consolidated_cart, coupons)
   clearanced_cart = apply_clearance(couponed_cart)
 
-  clearanced_cart.each_with_object({}) do |(product, attributes), total|
+  total = clearanced_cart.each_with_object({}) do |product, attributes|
     attributes[:price] * attributes[:count]
   end
   binding.pry

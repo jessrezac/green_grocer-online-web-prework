@@ -45,4 +45,6 @@ def checkout(cart, coupons)
     attributes = attributes[:price] * attributes[:count]
     attributes
   end.sum
+
+  total
 end

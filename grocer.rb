@@ -46,5 +46,5 @@ def checkout(cart, coupons)
     attributes
   end.sum
 
-  total
+  if total > 100 
 end
